@@ -43,3 +43,7 @@ _key_ is the auth key
 
 This endpoint returns a web page which is to ne displayed on a **WebView** widget inside an App.
 
+-----
+## Caching
+
+We highly recommend the API consumers to cache data where ever possible. We have set an ideal caching time to 15 minutes at day-time and 2 hours at night-time due to the nature of our publishing pattern.
