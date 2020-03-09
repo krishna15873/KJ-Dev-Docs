@@ -44,7 +44,7 @@ _id_ is the unique id of article
 <br>
 _key_ is the auth key
 
-This endpoint returns a web page which is to ne displayed on a **WebView** widget inside an App.
+This endpoint returns a web page which is to be displayed on a **WebView** widget inside an App.
 
 -----
 ## Caching
