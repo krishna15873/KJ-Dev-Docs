@@ -29,14 +29,14 @@ Base API endpoint will return latest news items in JSON format. e.g.:
 This returns [Top 20] News Items ordered by Published Date.
 <br>
 
-**id**: is the unique identifier of the news item and is unique for its specific domain.
+**id** : is the unique identifier of the news item and is unique for its specific domain.
 
-**CoverImage**: can be resized via a url by passing querystring parameters. e.g: /media/image-name.jpg?height={height}&width={width}&format={webp}
+**CoverImage** : can be resized via a url by passing querystring parameters. e.g: /media/image-name.jpg?height={height}&width={width}&format={webp}
 
 We support webp for image compression and highly recommend to resize images for better network/bandwidth performance.
 
-<br>
-**URL**: can be used to share the news on an app.
+
+**URL** : can be used to share the news on an app.
 
 **2) Article Endpoint**: domain.com/api/story/{id}?key={key}
 <br>
