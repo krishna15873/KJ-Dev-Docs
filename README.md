@@ -26,6 +26,9 @@ Base API endpoint will return latest news items in JSON format. e.g.:
 ]
 </pre>
 
+This returns [Top 20] News Items ordered by Published Date.
+<br>
+
 **id**: is the unique identifier of the news item and is unique for its specific domain.
 
 **CoverImage**: can be resized via a url by passing querystring parameters. e.g: /media/image-name.jpg?height={height}&width={width}&format={webp}
