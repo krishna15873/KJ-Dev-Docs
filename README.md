@@ -13,11 +13,11 @@ NOTE: All requests are to be made on **https**
 Base API endpoint will return latest news items in JSON format. e.g.:
 <pre>
 [
-    {
-        summary: "",
+    {        
         id: ""
-        title: ""
+        title: ""        
         coverImage: ""
+        summary: "",
         datePublished: ""
         url: ""
         category: ""
@@ -38,15 +38,40 @@ We support webp for image compression and highly recommend to resize images for 
 
 **URL** : can be used to share the news on an app.
 
-**2) Article Endpoint**: domain.com/api/story/{id}?key={key}
+**2) Categories Endpoint**: domain.com/api/categories?key={key}
+
+This endpoint returns list of categories/sections.
+<pre>
+[
+    {
+        id:"",  // category id
+        category:"", // category name
+        news:[
+                {
+                    id: ""
+                    title: ""        
+                    coverImage: ""
+                    summary: "",
+                    datePublished: ""
+                    url: ""
+                },
+                ...
+            ]
+    },
+    ...
+]
+</pre>
+
+**3) Article Endpoint**: domain.com/api/story/{id}?key={key}
 <br>
 _id_ is the unique id of article 
 <br>
 _key_ is the auth key
 
-This endpoint returns a web page which is to be displayed on a **WebView** widget inside an App.
+This endpoint returns a web page which is to be displayed inside a **WebView** widget inside an App.
 
 -----
+
 ## Caching
 
 We highly recommend the API consumers to cache data where ever possible. We have set an ideal caching time to 15 minutes at day-time and 2 hours at night-time due to the nature of our publishing pattern.
