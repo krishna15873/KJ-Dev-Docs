@@ -38,7 +38,7 @@ We support webp for image compression and highly recommend to resize images for 
 
 **URL** : can be used to share the news on an app.
 
-**2) Categories Endpoint**: domain.com/api/categories?key={key}
+**2) Categories Endpoint**: domain.com/api/categories/rss?key={key}
 
 This endpoint returns list of categories/sections.
 <pre>
