@@ -20,7 +20,8 @@ Base API endpoint will return latest news items in JSON format. e.g.:
         summary: "",
         datePublished: ""
         url: ""
-        category: ""
+        category: "",
+        contact:"" // this is an email where readers can contact the author/writer.
     },
     ...
 ]
@@ -53,7 +54,8 @@ This endpoint returns list of categories/sections.
                     coverImage: ""
                     summary: "",
                     datePublished: ""
-                    url: ""
+                    url: "",
+                    contact:""
                 },
                 ...
             ]
@@ -62,11 +64,13 @@ This endpoint returns list of categories/sections.
 ]
 </pre>
 
-**3) Article Endpoint**: domain.com/api/story/{id}?key={key}
+**3) Article Endpoint**: domain.com/api/story/{id}?key={key}&related=1
 <br>
 _id_ is the unique id of article 
 <br>
 _key_ is the auth key
+<br>
+_related_ =1 returns top [4] articles in the respective category
 
 This endpoint returns a web page which is to be displayed inside a **WebView** widget inside an App.
 
